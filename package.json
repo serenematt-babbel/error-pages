@@ -1,0 +1,14 @@
+{
+  "name": "lessonnineerr",
+  "version": "1.0.0",
+  "description": "Library for localised error pages",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "MTech Delivery Heroes",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.0"
+  }
+}
