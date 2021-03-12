@@ -1,2 +1,3 @@
 const errorPages = require('lessonnineerr');
-console.log('hey', errorPages.getErrorPage('en', '404'));
+const response = errorPages.getErrorPage('en', '404');
+console.log('hey', response);

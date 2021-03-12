@@ -2,11 +2,10 @@ const axios = require('axios');
 
 const getErrorPage = async (locale, errorCode) => {
   try {
-    const url = `http://kitchen-sink.babbel.test/${locale}/${errorCode}.html`;
-    // const url = 'google.com';
+    const url = `http://errors.babbel.test/errors/${locale}/${errorCode}.html`;
     const response = await axios.get(
       url,
-      { responseType: 'stream' }
+      { timeout: 3000, responseType: 'stream' }
     );
   
     if (response.status < 400) {
